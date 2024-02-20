@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>redirecting...</title>
+
+        <link rel="icon" type="image/jpg" sizes="32x32" href="desktop/arash_icon.jpg">
+        <script>
+            (function() {
+                var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+                if (isMobile) {
+                    // 如果是移动设备，重定向到移动设备专用目录
+                    window.location.href = 'mobile/index.html';
+                } else {
+                    // 如果是桌面设备，重定向到桌面设备专用目录
+                    window.location.href = 'desktop/index.html';
+                }
+            })();
+        </script>
+</head>
